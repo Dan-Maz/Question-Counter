@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body style="background-color: bisque; text-align: center;">
+    <h1 style="font-size: 75px">Question Counter.</h1>
+    <h1 id="holder" style="font-size: 75px">0</h1>
+    <button onclick="increase()" style="border-bottom-color: black; font-size: 24; width: 50%; height: 100px;">
+        <h1>+1</h1>
+    </button>
+    <img src="https://media.giphy.com/media/l3q2zVr6cu95nF6O4/giphy.gif" style="width: 51%; padding-top: 50px;">
+    <script type="text/javascript">
+        var num = 0;
+
+        function increase() {
+            num++;
+            console.log(num);
+            document.getElementById("holder").innerHTML = num;
+        }
+    </script>
+</body>
+</html>
